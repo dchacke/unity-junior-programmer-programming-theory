@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sphere : Shape
+public class Sphere : Shape // INHERITANCE
 {
     public Sphere()
     {
@@ -10,7 +10,7 @@ public class Sphere : Shape
         Name = "sphere";
     }
 
-    protected override void OnMouseDown()
+    protected override void OnMouseDown() // POLYMORPHISM
     {
         DisplayText($"I'm a little different. You clicked on the {Color} {Name}.");
         DisplayText(1);
