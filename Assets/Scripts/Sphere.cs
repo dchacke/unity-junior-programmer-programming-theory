@@ -13,5 +13,6 @@ public class Sphere : Shape
     protected override void OnMouseDown()
     {
         DisplayText($"I'm a little different. You clicked on the {Color} {Name}.");
+        DisplayText(1);
     }
 }

@@ -12,6 +12,11 @@ public abstract class Shape : MonoBehaviour
         Debug.Log(msg);
     }
 
+    protected void DisplayText(int num)
+    {
+        Debug.Log($"Here's some number just to demonstrate overloading: {num}");
+    }
+
     protected virtual void OnMouseDown()
     {
         DisplayText($"You clicked on the {Color} {Name}.");
