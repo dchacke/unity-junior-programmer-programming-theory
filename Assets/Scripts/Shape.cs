@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public abstract class Shape : MonoBehaviour
 {
     public string Color { get; protected set; } // ENCAPSULATION
     public string Name { get; protected set; } // ENCAPSULATION
 
+    [SerializeField] TextMeshProUGUI textToDisplay;
+
     protected void DisplayText(string msg) // ABSTRACTION
     {
-        Debug.Log(msg);
+        textToDisplay.text = msg;
     }
 
     protected void DisplayText(int num) // POLYMORPHISM
