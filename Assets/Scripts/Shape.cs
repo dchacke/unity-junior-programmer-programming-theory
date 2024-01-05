@@ -4,10 +4,10 @@ using UnityEngine;
 
 public abstract class Shape : MonoBehaviour
 {
-    public string Color { get; private set; }
-    public string Name { get; private set; }
+    public string Color { get; protected set; }
+    public string Name { get; protected set; }
 
-    void DisplayText(string msg)
+    protected void DisplayText(string msg)
     {
         Debug.Log(msg);
     }
