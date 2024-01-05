@@ -11,4 +11,9 @@ public abstract class Shape : MonoBehaviour
     {
         Debug.Log(msg);
     }
+
+    protected virtual void OnMouseDown()
+    {
+        DisplayText($"You clicked on the {Color} {Name}.");
+    }
 }

@@ -9,9 +9,4 @@ public class Cube : Shape
         Color = "white";
         Name = "cube";
     }
-
-    void OnMouseDown()
-    {
-        DisplayText($"You clicked on the {Color} {Name}.");
-    }
 }

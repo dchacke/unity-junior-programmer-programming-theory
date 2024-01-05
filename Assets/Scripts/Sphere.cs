@@ -6,12 +6,12 @@ public class Sphere : Shape
 {
     public Sphere()
     {
-        Color = "red";
+        Color = "blue";
         Name = "sphere";
     }
 
-    void OnMouseDown()
+    protected override void OnMouseDown()
     {
-        DisplayText($"You clicked on the {Color} {Name}.");
+        DisplayText($"I'm a little different. You clicked on the {Color} {Name}.");
     }
 }
